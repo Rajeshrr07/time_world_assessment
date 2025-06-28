@@ -5,7 +5,7 @@ export default function CountryCard({ country }) {
   return (
     <Card className="border border-dark border-1 rounded-1">
       <Card.Body className="p-2">
-        <Row className="align-items-center g-0">
+        <Row className="align-items-center g-0 gap-2">
           <Col
             xs={4}
             className="d-flex justify-content-center align-items-center"
@@ -30,7 +30,7 @@ export default function CountryCard({ country }) {
               </div>
             )}
           </Col>
-          <Col xs={8}>
+          <Col xs={7}>
             <Card.Title className="mb-0 fw-semibold fs-6">
               {country.name}
             </Card.Title>

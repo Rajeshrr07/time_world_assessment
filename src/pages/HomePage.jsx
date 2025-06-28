@@ -50,7 +50,7 @@ export default function HomePage() {
           {loading ? (
             <p>Loading...</p>
           ) : (
-            <Row className="my-4">
+            <Row className="mt-4">
               {filtered.slice(0, visible).map((country) => (
                 <Col md={6} key={country.name} className="mb-3">
                   <CountryCard country={country} />
@@ -62,7 +62,7 @@ export default function HomePage() {
           {visible < filtered.length && (
             <Button
               onClick={handleLoadMore}
-              className="justify-content-center align-items-center d-flex mx-auto my-4 bg-dark text-white border-0 rounded-0"
+              className="justify-content-center align-items-center d-flex mx-auto mb-4 bg-dark text-white border-0 rounded-0"
             >
               Load More
             </Button>
